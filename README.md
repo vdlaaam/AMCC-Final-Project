@@ -1,6 +1,37 @@
-Reflectly.
-Reclectly. adalah platform atau website tentang kesehatan mental yang dirancang untuk membantu seseorang dalam mengelola stres atau kecemasan. Kami menyediakan fitur Dashbord, Journal, dan Mood Tracker. Reflectly. juga menyediakan solusi untuk meningkatkan kesejahteraan mental yang dapat dilihat melalui sosial media Reflectly. dengan menekan tombol yang sudah tersedia dalam platform.
-Fitur utama dari website Reflectly. adalah Journal, disini para users dapat membagikan atau menulis cerita harian mereka secara singkat. Kemudian dapat dijadikan sebagai refleksi harian untuk dapat mengetahui seperti apa keadaan mental mereka setiap harinya.
-HTML, CSS Tailwind, Vite, React
-Cara menjalankan project website ini adalah dengan menggunakan npm run dev dalam terminal kemudian menekan link yang ada didalamnya. Sedangkan, jika cara untuk menjalankan project dalam website Reflectly. adalah dengan menekan tombol-tombol navigasi yang telah tersedia.
-Vivia dan Nedeliana : Frontend Developer
+# `react`
+
+React is a JavaScript library for creating user interfaces.
+
+The `react` package contains only the functionality necessary to define React components. It is typically used together with a React renderer like `react-dom` for the web, or `react-native` for the native environments.
+
+**Note:** by default, React will be in development mode. The development version includes extra warnings about common mistakes, whereas the production version includes extra performance optimizations and strips all error messages. Don't forget to use the [production build](https://reactjs.org/docs/optimizing-performance.html#use-the-production-build) when deploying your application.
+
+## Usage
+
+```js
+import { useState } from 'react';
+import { createRoot } from 'react-dom/client';
+
+function Counter() {
+  const [count, setCount] = useState(0);
+  return (
+    <>
+      <h1>{count}</h1>
+      <button onClick={() => setCount(count + 1)}>
+        Increment
+      </button>
+    </>
+  );
+}
+
+const root = createRoot(document.getElementById('root'));
+root.render(<Counter />);
+```
+
+## Documentation
+
+See https://react.dev/
+
+## API
+
+See https://react.dev/reference/react

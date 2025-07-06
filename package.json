@@ -1,43 +1,51 @@
 {
-	"name": "yocto-queue",
-	"version": "0.1.0",
-	"description": "Tiny queue data structure",
-	"license": "MIT",
-	"repository": "sindresorhus/yocto-queue",
-	"funding": "https://github.com/sponsors/sindresorhus",
-	"author": {
-		"name": "Sindre Sorhus",
-		"email": "sindresorhus@gmail.com",
-		"url": "https://sindresorhus.com"
-	},
-	"engines": {
-		"node": ">=10"
-	},
-	"scripts": {
-		"test": "xo && ava && tsd"
-	},
-	"files": [
-		"index.js",
-		"index.d.ts"
-	],
-	"keywords": [
-		"queue",
-		"data",
-		"structure",
-		"algorithm",
-		"queues",
-		"queuing",
-		"list",
-		"array",
-		"linkedlist",
-		"fifo",
-		"enqueue",
-		"dequeue",
-		"data-structure"
-	],
-	"devDependencies": {
-		"ava": "^2.4.0",
-		"tsd": "^0.13.1",
-		"xo": "^0.35.0"
-	}
+  "name": "react",
+  "description": "React is a JavaScript library for building user interfaces.",
+  "keywords": [
+    "react"
+  ],
+  "version": "19.1.0",
+  "homepage": "https://react.dev/",
+  "bugs": "https://github.com/facebook/react/issues",
+  "license": "MIT",
+  "files": [
+    "LICENSE",
+    "README.md",
+    "index.js",
+    "cjs/",
+    "compiler-runtime.js",
+    "jsx-runtime.js",
+    "jsx-runtime.react-server.js",
+    "jsx-dev-runtime.js",
+    "jsx-dev-runtime.react-server.js",
+    "react.react-server.js"
+  ],
+  "main": "index.js",
+  "exports": {
+    ".": {
+      "react-server": "./react.react-server.js",
+      "default": "./index.js"
+    },
+    "./package.json": "./package.json",
+    "./jsx-runtime": {
+      "react-server": "./jsx-runtime.react-server.js",
+      "default": "./jsx-runtime.js"
+    },
+    "./jsx-dev-runtime": {
+      "react-server": "./jsx-dev-runtime.react-server.js",
+      "default": "./jsx-dev-runtime.js"
+    },
+    "./compiler-runtime": {
+      "react-server": "./compiler-runtime.js",
+      "default": "./compiler-runtime.js"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/facebook/react.git",
+    "directory": "packages/react"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  }
 }
